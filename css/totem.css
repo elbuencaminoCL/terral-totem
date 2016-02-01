@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', sans-serif !important;
+  font-family: 'Lato', sans-serif !important;
   background: 0 #ffffff;
   background-size: 100% auto;
 }
@@ -30,6 +30,10 @@ a:hover {
 .center {
   width: 100%;
   text-align: center;
+}
+.no-float {
+  margin: 0 auto;
+  float: none;
 }
 .shadow {
   position: relative;
@@ -63,10 +67,15 @@ a:hover {
 }
 /*HOME*/
 .intro {
-  padding: 70px 0;
-  color: #8b562a;
+  padding: 40px 0;
+  color: #8b572a;
   z-index: 40;
   text-align: center;
+}
+.intro p {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 4px;
 }
 .cont-servicios .cont-interior {
   padding: 0;
@@ -76,6 +85,10 @@ a:hover {
   height: 290px;
   background: #b2753e;
   text-align: center;
+}
+.cont-servicios .block h2 {
+  font-size: 26px;
+  font-weight: 700;
 }
 .cont-servicios .title {
   position: absolute;

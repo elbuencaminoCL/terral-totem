@@ -2,12 +2,12 @@
 
 /*MAIN STYLES*/
 @white: #fff;
-@brown: #8b562a;
+@brown: #8b572a;
 @light-brown: #b2753e;
 @base-grey: #4b4c46;
 @light-grey: #5e5d62;
 @border-grey: #979797;
-@family: 'Roboto Condensed', sans-serif;
+@family: 'Lato', sans-serif;
 @font: 'PT Sans Narrow', sans-serif;
 .rounded-corners (@radius:10px) {
     -webkit-border-radius: @radius;
@@ -28,6 +28,7 @@ h5 {}
 h6 {}
 a:hover {text-decoration:none;}
 .center {width:100%; text-align:center;}
+.no-float {margin:0 auto; float:none;}
 .shadow {position:relative; -webkit-box-shadow:0px 2px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);}
 
 /*WRAPPER*/
@@ -42,10 +43,16 @@ a:hover {text-decoration:none;}
 }
 
 /*HOME*/
-.intro {padding:70px 0; color:@brown; z-index:40; text-align:center;}
+.intro {padding:40px 0; color:@brown; z-index:40; text-align:center;}
+.intro {
+	p {font-size:26px; font-weight:300; letter-spacing:4px;}
+}
 .cont-servicios {
 	.cont-interior {padding:0;}
 	.block {position:relative; height:290px; background:@light-brown; text-align:center;}
+	.block {
+		h2 {font-size:26px; font-weight:700;}
+	}
 	.title {position:absolute; width:auto; max-width:230px; max-height:115px; margin:auto; top:0; bottom:0; left:0; right:0; padding:12px 20px; border:2px solid @white; text-align:center;}
 	.title h2 {color:@white; text-transform:uppercase;}
 }
