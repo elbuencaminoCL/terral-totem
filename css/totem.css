@@ -17,6 +17,9 @@ h2 {
 h3 {
   margin: 0;
 }
+a {
+  cursor: pointer;
+}
 a:hover {
   text-decoration: none;
 }
@@ -44,6 +47,9 @@ a:hover {
   position: relative;
   z-index: 50;
 }
+#header .top {
+  position: relative;
+}
 #header .top div {
   padding: 0;
 }
@@ -59,38 +65,91 @@ a:hover {
 #header h2 {
   margin: auto;
 }
-#header .title {
+#header .fixed-position {
   position: absolute;
-  width: auto;
-  max-width: 330px;
-  min-height: 60px;
-  height: 150px;
+  width: 100%;
+  height: 250px;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+}
+#header .fixed-position .title {
+  width: auto;
+  margin: 0 auto;
+  max-width: 330px;
+  min-height: 60px;
   padding: 12px 25px !important;
   border: 2px solid #ffffff;
   text-align: center;
 }
-#header .title h2,
-#header .title h3 {
+#header .fixed-position .title.block-3 {
+  height: 150px;
+}
+#header .fixed-position .title.block-2 {
+  height: 150px;
+}
+#header .fixed-position .title h2,
+#header .fixed-position .title h3 {
   color: #ffffff;
   line-height: 130%;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 3px;
 }
-#header .title h2 a,
-#header .title h3 a {
+#header .fixed-position .title h2 a,
+#header .fixed-position .title h3 a {
   color: #ffffff;
+}
+#header .fixed-position .main-intro {
+  margin: 40px auto;
+  text-align: center;
+}
+#header .fixed-position .main-intro p {
+  max-width: 70%;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #ffffff;
+  letter-spacing: 3px;
 }
 #header img {
   width: 100%;
 }
-#header .main-intro {
+#header .cont-auxi {
   position: absolute;
+  top: 30px;
+  z-index: 50;
+  width: 100%;
+}
+#header .cont-auxi a {
+  display: block;
+  width: 68px;
+  height: 70px;
+}
+#header .cont-auxi a:hover {
+  opacity: .5;
+}
+#header .cont-auxi .left-auxi {
+  position: absolute;
+  width: auto;
+  top: 0px;
+  left: 30px;
+}
+#header .cont-auxi .left-auxi a {
+  background: url(../imag/auxi/back_icon.png) no-repeat left top;
+  text-indent: -999em;
+}
+#header .cont-auxi .right-auxi {
+  position: absolute;
+  width: auto;
+  top: 0px;
+  right: 30px;
+}
+#header .cont-auxi .right-auxi a {
+  background: url(../imag/auxi/home_icon.png) no-repeat left top;
+  text-indent: -999em;
 }
 /*HOME*/
 .intro {
@@ -174,5 +233,92 @@ a:hover {
   font-size: 16px;
   font-weight: 300;
   line-height: 140%;
+}
+/*CARTAS*/
+.cont-menu {
+  position: relative;
+  padding: 50px 0 0;
+  width: 100%;
+  z-index: 30;
+}
+.title-carta {
+  padding: 20px 0;
+  border-bottom: 1px solid #4d3118;
+  text-align: center;
+}
+.title-carta h3 {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #8b572a;
+  text-transform: uppercase;
+}
+.cont-col {
+  height: 590px;
+}
+.cont-navi {
+  padding: 20px 0;
+  border-top: 1px solid #8b572a;
+}
+.cont-navi a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #8b572a;
+}
+.cont-navi .prev {
+  float: left;
+}
+.cont-navi .prev a {
+  padding-left: 40px;
+}
+.cont-navi .next {
+  float: right;
+}
+.cont-navi .next a {
+  padding-right: 40px;
+}
+/*FOOTER*/
+#footer .related {
+  position: relative;
+}
+#footer .related img {
+  width: 100%;
+}
+#footer .related .title {
+  position: absolute;
+  width: auto;
+  max-width: 200px;
+  min-height: 60px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 25px;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+#footer .related .title h2,
+#footer .related .title h3 {
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 130%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+#footer .related .title h2 a,
+#footer .related .title h3 a {
+  color: #ffffff;
+}
+#footer .related .block-3 {
+  height: 125px;
+}
+#footer .related .block-2 {
+  height: 95px;
+}
+#footer .related .block-1 {
+  height: 60px;
 }
 /*END*/
