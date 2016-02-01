@@ -1,0 +1,53 @@
+/*LESS*/
+
+/*MAIN STYLES*/
+@white: #fff;
+@brown: #8b562a;
+@light-brown: #b2753e;
+@base-grey: #4b4c46;
+@light-grey: #5e5d62;
+@border-grey: #979797;
+@family: 'Roboto Condensed', sans-serif;
+@font: 'PT Sans Narrow', sans-serif;
+.rounded-corners (@radius:10px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+/*GENERAL*/
+body {margin:0; padding:0; font-family:@family !important; background:0@white; background-size:100% auto;}
+p {font-size:15px;}
+h1 {}
+h2 {margin:0;}
+h3 {margin:0 0 45px; padding-bottom:8px; font-size:35px; text-align:center; text-transform:uppercase; font-family:@font; background:url(../imag/auxi/yellow-border.png) no-repeat center bottom; text-shadow: 1px 1px 5px #333;}
+h4 {}
+h5 {}
+h6 {}
+a:hover {text-decoration:none;}
+.center {width:100%; text-align:center;}
+.shadow {position:relative; -webkit-box-shadow:0px 2px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);}
+
+/*WRAPPER*/
+.wrapper {width:100%; position:relative;}
+
+/*HEADER*/
+#header {position:relative; z-index:50;}
+#header {
+	.top div {padding:0;}
+	h1 {position:absolute; margin:auto; top:0; bottom:0; left:0; right:0;}
+	img {width:100%;}
+}
+
+/*HOME*/
+.intro {padding:70px 0; color:@brown; z-index:40; text-align:center;}
+.cont-servicios {
+	.cont-interior {padding:0;}
+	.block {position:relative; height:290px; background:@light-brown; text-align:center;}
+	.title {position:absolute; width:auto; max-width:230px; max-height:115px; margin:auto; top:0; bottom:0; left:0; right:0; padding:12px 20px; border:2px solid @white; text-align:center;}
+	.title h2 {color:@white; text-transform:uppercase;}
+}
+
+/*END*/
