@@ -32,10 +32,12 @@ a {cursor:pointer}
 a:hover {text-decoration:none;}
 .center {width:100%; text-align:center;}
 .no-float {margin:0 auto; float:none;}
+.no-padding {padding:0 0 20px !important;}
 .shadow {position:relative; -webkit-box-shadow:0px 2px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);}
 
 /*WRAPPER*/
 .wrapper {width:100%; position:relative;}
+#main {width:100%; display:block;}
 
 /*HEADER*/
 #header {position:relative; z-index:50;}
@@ -129,8 +131,10 @@ a:hover {text-decoration:none;}
 
 /*SERVICIOS HOTEL*/
 .border-div {padding:20px 0; border-bottom:1px solid @border-grey;}
-.border-div {
-	
+.item-servicios {color:@text-grey;}
+.item-servicios {
+	p {line-height:120%;}
+	img {margin:0 30px 0 0; float:left;}
 }
 
 /*FOOTER*/
@@ -144,6 +148,10 @@ a:hover {text-decoration:none;}
 		.block-3 {height:125px;}
 		.block-2 {height:95px;}
 		.block-1 {height:60px;}
+	}
+	.scroll-top {padding:40px 0; text-align:center;}
+	.scroll-top {
+		img {margin:0 auto;}
 	}
 }
 
