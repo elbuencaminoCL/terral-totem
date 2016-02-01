@@ -15,14 +15,7 @@ h2 {
   margin: 0;
 }
 h3 {
-  margin: 0 0 45px;
-  padding-bottom: 8px;
-  font-size: 35px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'PT Sans Narrow', sans-serif;
-  background: url(../imag/auxi/yellow-border.png) no-repeat center bottom;
-  text-shadow: 1px 1px 5px #333;
+  margin: 0;
 }
 a:hover {
   text-decoration: none;
@@ -56,14 +49,48 @@ a:hover {
 }
 #header h1 {
   position: absolute;
+  width: 412px;
+  height: 189px;
+  margin: auto;
+  top: 80px;
+  left: 0;
+  right: 0;
+}
+#header h2 {
+  margin: auto;
+}
+#header .title {
+  position: absolute;
+  width: auto;
+  max-width: 330px;
+  min-height: 60px;
+  height: 150px;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 12px 25px !important;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+#header .title h2,
+#header .title h3 {
+  color: #ffffff;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+#header .title h2 a,
+#header .title h3 a {
+  color: #ffffff;
 }
 #header img {
   width: 100%;
+}
+#header .main-intro {
+  position: absolute;
 }
 /*HOME*/
 .intro {
@@ -77,12 +104,14 @@ a:hover {
   font-weight: 300;
   letter-spacing: 4px;
 }
-.cont-servicios .cont-interior {
+.cont-servicios .cont-interior,
+.cont-servicios .cont-grid {
   padding: 0;
 }
 .cont-servicios .block {
   position: relative;
-  height: 290px;
+  min-height: 290px;
+  padding: 0;
   background: #b2753e;
   text-align: center;
 }
@@ -90,22 +119,60 @@ a:hover {
   font-size: 26px;
   font-weight: 700;
 }
-.cont-servicios .title {
+.cont-servicios .block h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+.cont-servicios .block img {
+  width: 100%;
+}
+.cont-servicios .block .title {
   position: absolute;
   width: auto;
-  max-width: 230px;
-  max-height: 115px;
+  max-width: 270px;
+  min-height: 60px;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 12px 20px;
+  padding: 12px 25px;
   border: 2px solid #ffffff;
   text-align: center;
 }
-.cont-servicios .title h2 {
+.cont-servicios .block .title h2,
+.cont-servicios .block .title h3 {
   color: #ffffff;
+  line-height: 130%;
   text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.cont-servicios .block .title h2 a,
+.cont-servicios .block .title h3 a {
+  color: #ffffff;
+}
+.cont-servicios .block .block-3 {
+  height: 125px;
+}
+.cont-servicios .block .block-2 {
+  height: 95px;
+}
+.cont-servicios .block .block-1 {
+  height: 60px;
+}
+.cont-servicios .block .excerpt {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 30px 50px;
+  background: url(../imag/back/bg_text.png) repeat left top;
+}
+.cont-servicios .block .excerpt p {
+  margin: 0 auto;
+  max-width: 90%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
 }
 /*END*/

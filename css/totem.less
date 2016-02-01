@@ -22,7 +22,7 @@ body {margin:0; padding:0; font-family:@family !important; background:0@white; b
 p {font-size:15px;}
 h1 {}
 h2 {margin:0;}
-h3 {margin:0 0 45px; padding-bottom:8px; font-size:35px; text-align:center; text-transform:uppercase; font-family:@font; background:url(../imag/auxi/yellow-border.png) no-repeat center bottom; text-shadow: 1px 1px 5px #333;}
+h3 {margin:0;}
 h4 {}
 h5 {}
 h6 {}
@@ -37,9 +37,15 @@ a:hover {text-decoration:none;}
 /*HEADER*/
 #header {position:relative; z-index:50;}
 #header {
+	.top {}
 	.top div {padding:0;}
-	h1 {position:absolute; margin:auto; top:0; bottom:0; left:0; right:0;}
+	h1 {position:absolute; width:412px; height:189px; margin:auto; top:80px; left:0; right:0;}
+	h2 {margin:auto;}
+	.title {position:absolute; width:auto; max-width:330px; min-height:60px; height:150px; margin:auto; top:0; bottom:0; left:0; right:0; padding:12px 25px !important; border:2px solid @white; text-align:center;}
+	.title h2, .title h3 {color:@white; line-height:130%; text-transform:uppercase; font-weight:700; letter-spacing:3px;}
+	.title h2 a, .title h3 a {color:@white;}
 	img {width:100%;}
+	.main-intro {position:absolute;}
 }
 
 /*HOME*/
@@ -48,13 +54,23 @@ a:hover {text-decoration:none;}
 	p {font-size:26px; font-weight:300; letter-spacing:4px;}
 }
 .cont-servicios {
-	.cont-interior {padding:0;}
-	.block {position:relative; height:290px; background:@light-brown; text-align:center;}
+	.cont-interior, .cont-grid {padding:0;}
+	.block {position:relative; min-height:290px; padding:0; background:@light-brown; text-align:center;}
 	.block {
 		h2 {font-size:26px; font-weight:700;}
+		h3 {font-size:26px; font-weight:700;}
+		img {width:100%;}
+		.title {position:absolute; width:auto; max-width:270px; min-height:60px; margin:auto; top:0; bottom:0; left:0; right:0; padding:12px 25px; border:2px solid @white; text-align:center;}
+		.title h2, .title h3 {color:@white; line-height:130%; text-transform:uppercase; letter-spacing:3px;}
+		.title h2 a, .title h3 a {color:@white;}
+		.block-3 {height:125px;}
+		.block-2 {height:95px;}
+		.block-1 {height:60px;}
+		.excerpt {position:absolute; width:100%; bottom:0; padding:30px 50px; background:url(../imag/back/bg_text.png) repeat left top;}
+		.excerpt {
+			p {margin:0 auto; max-width:90%; color:@white; font-size:16px; font-weight:300; line-height:140%;}
+		}
 	}
-	.title {position:absolute; width:auto; max-width:230px; max-height:115px; margin:auto; top:0; bottom:0; left:0; right:0; padding:12px 20px; border:2px solid @white; text-align:center;}
-	.title h2 {color:@white; text-transform:uppercase;}
 }
 
 /*END*/
