@@ -8,6 +8,7 @@
 @base-grey: #4b4c46;
 @light-grey: #5e5d62;
 @border-grey: #979797;
+@text-grey: #444;
 @family: 'Lato', sans-serif;
 @font: 'PT Sans Narrow', sans-serif;
 .rounded-corners (@radius:10px) {
@@ -43,6 +44,10 @@ a:hover {text-decoration:none;}
 	.top div {padding:0;}
 	h1 {position:absolute; width:412px; height:189px; margin:auto; top:80px; left:0; right:0;}
 	h2 {margin:auto;}
+	.fixed-title {position:absolute; margin:auto; right:0; left:0; top:0; width:500px; height:200px; background:url(../imag/back/bg-top.png) no-repeat center top;}
+	.fixed-title {
+		img {margin:25px auto; width:auto;}
+	}
 	.fixed-position {position:absolute; width:100%; height:250px; margin:auto; top:0; bottom:0; left:0; right:0;}
 	.fixed-position {
 		.title {width:auto; margin:0 auto; max-width:330px; min-height:60px; padding:12px 25px !important; border:2px solid @white; text-align:center;}
@@ -53,6 +58,7 @@ a:hover {text-decoration:none;}
 		.main-intro {margin:40px auto; text-align:center;}
 		.main-intro {
 			p {max-width:70%; font-size:22px; font-weight:400; line-height:140%; color:@white; letter-spacing:3px;}
+			p img {width:auto;}
 		}
 	}
 	img {width:100%;}
@@ -98,14 +104,33 @@ a:hover {text-decoration:none;}
 .title-carta {
 	h3 {font-size:26px; font-weight:300; letter-spacing:3px; color:@brown; text-transform:uppercase;}
 }
-.cont-col {height:590px;}
+.cont-col {padding:30px 0; height:540px; color:@brown; font-size:16px;}
+.cont-col {
+	.col-left {padding-right:60px;}
+	.col-right {padding-left:60px;}
+	h5 {display:block; width:100%; margin:0; font-size:16px; font-weight:700; background:url(../imag/back/bg_points.png) repeat-x right bottom;}
+	h5 span {display:inline-block;padding-right:5px; background:@white;}
+	span.italic {font-style:italic; font-weight:300;}
+	.price {font-weight:700;}
+	.item-menu {margin:0 0 20px; clear:both;}
+	.item-menu {
+		.left {width:90%; padding-right:10px; float:left;}
+		.right {width:10%; padding-left:10px; float:right;}
+	}
+}
 .cont-navi {padding:20px 0; border-top:1px solid @brown;}
 .cont-navi {
-	a {text-transform:uppercase; font-size:18px; font-weight:700; color:@brown;}
-	.prev {float:left;}
-	.prev a {padding-left:40px;}
-	.next {float:right;}
-	.next a {padding-right:40px;}
+	a {display:block; text-transform:uppercase; font-size:18px; font-weight:700; color:@brown;}
+	.prev {background:url(../imag/auxi/arrow-left.png) no-repeat left top; float:left;}
+	.prev a {padding-left:40px; padding-top:8px; padding-bottom:8px;}
+	.next {background:url(../imag/auxi/arrow-right.png) no-repeat right top; float:right;}
+	.next a {padding-right:40px; padding-top:8px; padding-bottom:8px;}
+}
+
+/*SERVICIOS HOTEL*/
+.border-div {padding:20px 0; border-bottom:1px solid @border-grey;}
+.border-div {
+	
 }
 
 /*FOOTER*/
@@ -113,7 +138,7 @@ a:hover {text-decoration:none;}
 	.related {position:relative;}
 	.related {
 		img {width:100%;}
-		.title {position:absolute; width:auto; max-width:200px; min-height:60px; margin:auto; top:0; bottom:0; left:0; right:0; padding:12px 25px; border:2px solid @white; text-align:center;}
+		.title {position:absolute; display:inline-block; width:auto; min-width:200px; max-width:300px; min-height:60px; margin:auto; top:0; bottom:0; left:0; right:0; padding:12px 25px; border:2px solid @white; text-align:center;}
 		.title h2, .title h3 {font-size:26px; color:@white; line-height:130%; text-transform:uppercase; letter-spacing:3px; font-weight:700;}
 		.title h2 a, .title h3 a {color:@white;}
 		.block-3 {height:125px;}
