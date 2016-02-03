@@ -4,6 +4,7 @@
 @white: #fff;
 @brown: #8b572a;
 @light-brown: #b2753e;
+@back-brown: #c3a791;
 @border-brown: #4D3118;
 @base-grey: #4b4c46;
 @light-grey: #5e5d62;
@@ -56,15 +57,15 @@ a:hover {text-decoration:none;}
 	.fixed-position {
 		.title {width:auto; margin:0 auto; max-width:330px; min-height:60px; padding:12px 25px !important; border:2px solid @white; text-align:center;}
 		.title.block-3 {height:150px;}
-		.title.block-2 {height:150px;}
+		.title.block-2 {height:110px;}
 		.title h2, .title h3, .subtitle h2 {color:@white; line-height:130%; text-transform:uppercase; font-weight:700; letter-spacing:3px;}
 		.title h2 a, .title h3 a {color:@white;}
 		.main-intro {margin:40px auto; text-align:center;}
 		.main-intro {
-			p {max-width:70%; font-size:22px; font-weight:400; line-height:140%; color:@white; letter-spacing:3px;}
+			p {max-width:65%; font-size:22px; font-weight:400; line-height:140%; color:@white; letter-spacing:3px;}
 			p img {width:auto;}
 		}
-		.subtitle {width:auto; margin:0 auto; max-width:415px; min-height:60px; padding:12px 25px !important; text-align:center;}
+		.subtitle {width:auto; margin:0 auto; max-width:60%; min-height:60px; padding:12px 25px !important; text-align:center;}
 		.subtitle {
 			h2 {display:inline-block; padding:5px 0; border-bottom:1px solid @white;}
 			h3 {display:inline-block; padding:5px 0; color:@white; font-size:30px; font-weight:300; text-transform:uppercase; letter-spacing:3px;}
@@ -112,9 +113,39 @@ a:hover {text-decoration:none;}
 .cont-grid-detail {
 	.block {position:relative; border:4px solid @grid-grey; background:none;}
 	.item-tour {position:absolute; bottom:0;}
+	.item-tour {
+		h4 {margin:0 0 15px;}
+		h4, h4 a {font-size:20px; font-weight:700; text-transform:uppercase; color:@white; letter-spacing:2px;}
+		.tour-detail {margin:10px 0 0; padding:20px; font-size:16px; color:@white; background:url(../imag/back/bg_text.png) repeat left top;}
+		.tour-detail {
+			.left {display:inline-block; width:50%; text-align:left; float:left;}
+			.right {display:inline-block; width:50%; text-align:right; float:right;}
+		}
+	}
+	.noc {height:390px;}
+	.noc {
+		.cont-buttons {margin-top:-65px;}
+	}
 	.description {background:@white;}
-	.top-description p {margin:0; color:@text-grey;}
+	.price-description {padding:0 20px;}
+	.price-description {
+		.price {padding:10px 0 20px; color:@brown; font-size:18px; letter-spacing:2px; line-height:140%; text-align:center;}
+		.price span {display:block; clear:both; text-transform:uppercase;}
+	}
+	.top-description p {margin:0px 30px; padding:15px 0; font-size:18px; color:@text-grey; text-align:center;}
+	.cont-buttons {padding:0 0 20px; border-bottom:2px solid @back-brown;}
+	.cont-hide {padding:20px 0;}
+	.cont-hide {
+		.look-price {display:block; margin:0 auto; width:40px; height:24px; background:url(../imag/auxi/arrow-top.png) no-repeat center top; text-indent:-999em;}
+		.look-price.price-open {background:url(../imag/auxi/arrow-down.png) no-repeat center top;}
+	}
 }
+
+/*BUTTONS*/
+.button {width:180px; padding:5px 0; text-align:center; font-size:18px; font-weight:400; border:2px solid @brown;}
+.button:hover {background:@back-brown; color:@white; border:2px solid @back-brown;}
+.info {background:@white; color:@brown; float:left;}
+.reserva {background:@brown; color:@white; float:right;}
 
 /*CARTAS*/
 .cont-menu {position:relative; padding:50px 0 0; width:100%; z-index:30;}
@@ -127,7 +158,7 @@ a:hover {text-decoration:none;}
 	.col-left {padding-right:60px;}
 	.col-right {padding-left:60px;}
 	h5 {display:block; width:100%; margin:0; font-size:16px; font-weight:700; background:url(../imag/back/bg_points.png) repeat-x right bottom;}
-	h5 span {display:inline-block;padding-right:5px; background:@white;}
+	h5 span {display:inline-block; padding-right:5px; background:@white;}
 	span.italic {font-style:italic; font-weight:300;}
 	.price {font-weight:700;}
 	.item-menu {margin:0 0 20px; clear:both;}

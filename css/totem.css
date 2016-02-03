@@ -113,7 +113,7 @@ a:hover {
   height: 150px;
 }
 #header .fixed-position .title.block-2 {
-  height: 150px;
+  height: 110px;
 }
 #header .fixed-position .title h2,
 #header .fixed-position .title h3,
@@ -133,7 +133,7 @@ a:hover {
   text-align: center;
 }
 #header .fixed-position .main-intro p {
-  max-width: 70%;
+  max-width: 65%;
   font-size: 22px;
   font-weight: 400;
   line-height: 140%;
@@ -146,7 +146,7 @@ a:hover {
 #header .fixed-position .subtitle {
   width: auto;
   margin: 0 auto;
-  max-width: 415px;
+  max-width: 60%;
   min-height: 60px;
   padding: 12px 25px !important;
   text-align: center;
@@ -299,12 +299,109 @@ a:hover {
   position: absolute;
   bottom: 0;
 }
+.cont-grid-detail .item-tour h4 {
+  margin: 0 0 15px;
+}
+.cont-grid-detail .item-tour h4,
+.cont-grid-detail .item-tour h4 a {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.cont-grid-detail .item-tour .tour-detail {
+  margin: 10px 0 0;
+  padding: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background: url(../imag/back/bg_text.png) repeat left top;
+}
+.cont-grid-detail .item-tour .tour-detail .left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+.cont-grid-detail .item-tour .tour-detail .right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  float: right;
+}
+.cont-grid-detail .noc {
+  height: 390px;
+}
+.cont-grid-detail .noc .cont-buttons {
+  margin-top: -65px;
+}
 .cont-grid-detail .description {
   background: #ffffff;
 }
+.cont-grid-detail .price-description {
+  padding: 0 20px;
+}
+.cont-grid-detail .price-description .price {
+  padding: 10px 0 20px;
+  color: #8b572a;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 140%;
+  text-align: center;
+}
+.cont-grid-detail .price-description .price span {
+  display: block;
+  clear: both;
+  text-transform: uppercase;
+}
 .cont-grid-detail .top-description p {
-  margin: 0;
+  margin: 0px 30px;
+  padding: 15px 0;
+  font-size: 18px;
   color: #444444;
+  text-align: center;
+}
+.cont-grid-detail .cont-buttons {
+  padding: 0 0 20px;
+  border-bottom: 2px solid #c3a791;
+}
+.cont-grid-detail .cont-hide {
+  padding: 20px 0;
+}
+.cont-grid-detail .cont-hide .look-price {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 24px;
+  background: url(../imag/auxi/arrow-top.png) no-repeat center top;
+  text-indent: -999em;
+}
+.cont-grid-detail .cont-hide .look-price.price-open {
+  background: url(../imag/auxi/arrow-down.png) no-repeat center top;
+}
+/*BUTTONS*/
+.button {
+  width: 180px;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  border: 2px solid #8b572a;
+}
+.button:hover {
+  background: #c3a791;
+  color: #ffffff;
+  border: 2px solid #c3a791;
+}
+.info {
+  background: #ffffff;
+  color: #8b572a;
+  float: left;
+}
+.reserva {
+  background: #8b572a;
+  color: #ffffff;
+  float: right;
 }
 /*CARTAS*/
 .cont-menu {
