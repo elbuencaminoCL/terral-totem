@@ -34,11 +34,17 @@ a:hover {
 .no-padding {
   padding: 0 !important;
 }
+.no-border {
+  border: none !important;
+}
 .shadow {
   position: relative;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.upper {
+  text-transform: uppercase;
 }
 /*WRAPPER*/
 .wrapper {
@@ -377,8 +383,22 @@ a:hover {
   background: url(../imag/auxi/arrow-top.png) no-repeat center top;
   text-indent: -999em;
 }
-.cont-grid-detail .cont-hide .look-price.price-open {
+.cont-grid-detail .cont-hide .look-price.current-open {
   background: url(../imag/auxi/arrow-down.png) no-repeat center top;
+}
+/*FICHA*/
+.tour-title {
+  padding: 30px 0;
+  background: #ebebeb;
+  text-align: center;
+}
+.tour-title h4 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #8b572a;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 /*BUTTONS*/
 .button {
@@ -498,7 +518,7 @@ a:hover {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-/*SERVICIOS HOTEL*/
+/*SERVICIOS HOTEL - GUÍA DE SERVICIOS*/
 .border-div {
   padding: 20px 0;
   border-bottom: 1px solid #979797;
@@ -536,6 +556,37 @@ a:hover {
   background: url(../imag/auxi/arrow-down.png) no-repeat center top;
   border: 0;
   text-indent: -999em;
+}
+.intro-guia {
+  padding: 25px 0;
+  background: #d2d2d4;
+  text-align: center;
+}
+.intro-guia p {
+  margin: 0;
+  font-size: 24px;
+  color: #444444;
+}
+.cont-circle {
+  display: table-cell;
+  margin: 0 30px 0 0;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #8b572a;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  float: left;
+}
+.cont-circle span {
+  font-size: 28px;
+  color: #8b572a;
+  font-weight: 700;
+  line-height: 170%;
 }
 /*FOOTER*/
 #footer .related {
@@ -588,6 +639,9 @@ a:hover {
 }
 #footer .scroll-top img {
   margin: 0 auto;
+}
+#footer .testimonios {
+  background: #ebebeb;
 }
 @media (min-width: 1200px) {
   .container {

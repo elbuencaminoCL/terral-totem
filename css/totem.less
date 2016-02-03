@@ -8,6 +8,7 @@
 @border-brown: #4D3118;
 @base-grey: #4b4c46;
 @light-grey: #5e5d62;
+@back-grey: #ebebeb;
 @border-grey: #979797;
 @grid-grey: #d2d2d4;
 @text-grey: #444;
@@ -35,7 +36,9 @@ a:hover {text-decoration:none;}
 .center {width:100%; text-align:center;}
 .no-float {margin:0 auto; float:none;}
 .no-padding {padding:0 !important;}
+.no-border {border:none !important;}
 .shadow {position:relative; -webkit-box-shadow:0px 2px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);}
+.upper {text-transform:uppercase;}
 
 /*WRAPPER*/
 .wrapper {width:100%; position:relative;}
@@ -137,8 +140,14 @@ a:hover {text-decoration:none;}
 	.cont-hide {padding:20px 0;}
 	.cont-hide {
 		.look-price {display:block; margin:0 auto; width:40px; height:24px; background:url(../imag/auxi/arrow-top.png) no-repeat center top; text-indent:-999em;}
-		.look-price.price-open {background:url(../imag/auxi/arrow-down.png) no-repeat center top;}
+		.look-price.current-open {background:url(../imag/auxi/arrow-down.png) no-repeat center top;}
 	}
+}
+
+/*FICHA*/
+.tour-title {padding:30px 0; background:@back-grey; text-align:center;}
+.tour-title {
+	h4 {margin:0; font-size:32px; font-weight:700; color:@brown; text-transform:uppercase; letter-spacing:4px;}
 }
 
 /*BUTTONS*/
@@ -176,7 +185,7 @@ a:hover {text-decoration:none;}
 	.next a {padding-right:40px; padding-top:8px; padding-bottom:8px;}
 }
 
-/*SERVICIOS HOTEL*/
+/*SERVICIOS HOTEL - GUÍA DE SERVICIOS*/
 .border-div {padding:20px 0; border-bottom:1px solid @border-grey;}
 .item-servicios {color:@text-grey;}
 .item-servicios {
@@ -186,6 +195,14 @@ a:hover {text-decoration:none;}
 }
 .cover {height:520px; overflow:auto;}
 #downClick {display:block; margin:0 auto; width:40px; height:24px; background:url(../imag/auxi/arrow-down.png) no-repeat center top; border:0; text-indent:-999em;}
+.intro-guia {padding:25px 0; background:@grid-grey; text-align:center;}
+.intro-guia {
+	p {margin:0; font-size:24px; color:@text-grey;}
+}
+.cont-circle {display:table-cell; margin:0 30px 0 0; width:52px; height:52px; border:1px solid @brown; .rounded-corners (@radius:50%); text-align:center; vertical-align:middle; float:left;}
+.cont-circle {
+	span {font-size:28px; color:@brown; font-weight:700; line-height:170%;}
+}
 
 /*FOOTER*/
 #footer {
@@ -203,6 +220,7 @@ a:hover {text-decoration:none;}
 	.scroll-top {
 		img {margin:0 auto;}
 	}
+	.testimonios {background:@back-grey;;}
 }
 
 @media (min-width: 1200px) {

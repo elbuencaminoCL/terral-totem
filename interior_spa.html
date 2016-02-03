@@ -19,18 +19,23 @@
 			$('.price-description').hide();
 			$('.description').each(function() {
 				var $dropdown = $(this);
-				$("a.look-price", $dropdown).click(function(e) {
+				$('.look-price', $dropdown).click(function(e) {
 					e.preventDefault();
-					$price = $(".price-description", $dropdown);
-					$price.toggle();
-					$(".price-description").not($price).hide();
-					if($(this).parent().closest('.description').find('.price-description').is(':visible')){
-						$('a.look-price').removeClass('price-open').text('» Ver Precio');
-						$(this).text('« Cerrar').addClass('price-open');
-					}
-					else {
-						$('a.look-price').removeClass('price-open');
+					$price = $('.price-description', $dropdown);
+					$price.slideToggle('fast', function() {
+		   			 	$('.look-price', $dropdown).toggleClass('current-open', $(this).is(':visible'));
+					});
+					$('.price-description').not($price).hide();
+					$('.price-description').not($price).parent().find('.look-price').text('» Ver Precio');
+					$(this).text('« Cerrar'); //texto activo
+					//remueve clases de otros contenedores
+					if($(this).hasClass('current-open')){
+						$('.look-price').removeClass('current-open');
 						$(this).text('» Ver Precio');
+					}
+					else{
+						$('.look-price').removeClass('current-open');
+						$(this).text('« Cerrar');
 					}
 					return false;
 				});
