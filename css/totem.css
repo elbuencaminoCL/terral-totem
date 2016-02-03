@@ -224,6 +224,7 @@ a:hover {
   padding: 0;
   background: #b2753e;
   text-align: center;
+  border: none;
 }
 .cont-servicios .block h2 {
   font-size: 26px;
