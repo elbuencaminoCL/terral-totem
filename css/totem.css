@@ -32,7 +32,7 @@ a:hover {
   float: none;
 }
 .no-padding {
-  padding: 0 0 20px !important;
+  padding: 0 !important;
 }
 .shadow {
   position: relative;
@@ -44,6 +44,10 @@ a:hover {
 .wrapper {
   width: 100%;
   position: relative;
+}
+.container {
+  max-width: 1080px !important;
+  width: 1080px !important;
 }
 #main {
   width: 100%;
@@ -112,7 +116,8 @@ a:hover {
   height: 150px;
 }
 #header .fixed-position .title h2,
-#header .fixed-position .title h3 {
+#header .fixed-position .title h3,
+#header .fixed-position .subtitle h2 {
   color: #ffffff;
   line-height: 130%;
   text-transform: uppercase;
@@ -137,6 +142,28 @@ a:hover {
 }
 #header .fixed-position .main-intro p img {
   width: auto;
+}
+#header .fixed-position .subtitle {
+  width: auto;
+  margin: 0 auto;
+  max-width: 415px;
+  min-height: 60px;
+  padding: 12px 25px !important;
+  text-align: center;
+}
+#header .fixed-position .subtitle h2 {
+  display: inline-block;
+  padding: 5px 0;
+  border-bottom: 1px solid #ffffff;
+}
+#header .fixed-position .subtitle h3 {
+  display: inline-block;
+  padding: 5px 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 #header img {
   width: 100%;
@@ -226,7 +253,7 @@ a:hover {
 .cont-servicios .block .title h2,
 .cont-servicios .block .title h3 {
   color: #ffffff;
-  line-height: 130%;
+  line-height: 125%;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -257,6 +284,27 @@ a:hover {
   font-size: 16px;
   font-weight: 300;
   line-height: 140%;
+}
+/*TOURS*/
+.cont-grid-detail {
+  padding: 4px;
+  background: #d2d2d4;
+}
+.cont-grid-detail .block {
+  position: relative;
+  border: 4px solid #d2d2d4;
+  background: none;
+}
+.cont-grid-detail .item-tour {
+  position: absolute;
+  bottom: 0;
+}
+.cont-grid-detail .description {
+  background: #ffffff;
+}
+.cont-grid-detail .top-description p {
+  margin: 0;
+  color: #444444;
 }
 /*CARTAS*/
 .cont-menu {
@@ -360,12 +408,36 @@ a:hover {
 .item-servicios {
   color: #444444;
 }
-.item-servicios p {
+.item-servicios p,
+.item-servicios span {
+  margin: 0;
   line-height: 120%;
+  vertical-align: middle;
 }
 .item-servicios img {
   margin: 0 30px 0 0;
+  width: 52px;
+  height: 52px;
   float: left;
+  vertical-align: middle;
+}
+.item-servicios .vertical {
+  display: table-cell;
+  height: 52px;
+  vertical-align: middle;
+}
+.cover {
+  height: 520px;
+  overflow: auto;
+}
+#downClick {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 24px;
+  background: url(../imag/auxi/arrow-down.png) no-repeat center top;
+  border: 0;
+  text-indent: -999em;
 }
 /*FOOTER*/
 #footer .related {
@@ -418,5 +490,10 @@ a:hover {
 }
 #footer .scroll-top img {
   margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1080px !important;
+  }
 }
 /*END*/

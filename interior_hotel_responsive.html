@@ -3,10 +3,10 @@
 <head>
 	<title>Terral Hotel</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 	<link href="style.css" rel="stylesheet" media="screen">
-	<link href="css/no-responsive.css" rel="stylesheet" media="screen">
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
@@ -18,16 +18,20 @@
 	<script>
 		var scrolled=0;
 		$(document).ready(function(){
-			$("#downClick").on("click" ,function(){
-	            scrolled=scrolled+300;
-				$(".cover").animate({
-					scrollTop:  scrolled
-				});
-			});
-			$(".clearValue").on("click" ,function(){
-				scrolled=0;
+		$("#downClick").on("click" ,function(){
+            scrolled=scrolled+300;
+			$(".cover").animate({
+				scrollTop:  scrolled
 			});
 		});
+
+
+$(".clearValue").on("click" ,function(){
+				scrolled=0;
+		});
+
+
+});
 	</script>
 </head>
 
@@ -61,79 +65,79 @@
 				<div class="clearfix">
 					<div class="cover clearfix">
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/salon_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Salón de eventos:</strong> Entregamos un servicio integral para que tu encuentro sea inolvidable. Tenemos una capacidad para 100 personas, y puedes contratar el proyector con telón, amplificación y coffe break si es que los necesitas.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/desayuno_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Desayuno Buffet:</strong> Desde las 7:30 hasta las 10:30 horas ofrecemos un delicioso desayuno Vicuñense, de campo, para comenzar el día de la mejor forma.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/desayuno_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Piscina:</strong> Al aire libre, de 72 m2, perfecta para refrescarse en un caluroso día de Vicuña. Operativa todo el año, apta para niños y niñas.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/habitacion_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Servicio a la habitación:</strong> El desayuno a la cama y los mejores aperitivos pueden estar a sólo un llamado de distancia, con nuestro servicio de atención personalizado entre las 08:00 y 22:30 horas.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/recepcion_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Recepción:</strong> Atenta a tus necesidades las 24 horas del día.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/bilingue_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Personal bilingüe:</strong> Dispuestos a responder a todas tus dudas.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/wifi_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Wi-Fi:</strong> Disponible en habitaciones e instalaciones de Terral Hotel &amp; Spa.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/tv_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>TV Cable:</strong> Satelital, habilitado en cada habitación para la entretención de nuestros huéspedes.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/climatizacion_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Edificio climatizado:</strong> Con aire acondicionado y calefacción, para responder a las condiciones climáticas del Valle de Elqui.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/estacionamiento_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Estacionamiento:</strong> Vigilado las 24 horas del día, con capacidad para 50 vehículos. Gratuito para huéspedes.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/overlanders_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Estacionamiento para overlanders:</strong> Podemos albergar hasta 18 motorhomes en Terral Hotel &amp; Spa, donde caravanas provenientes de diversos lugares del mundo podrán disfrutar de nuestros servicios junto a lo mejor del Valle de Elqui.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float clearfix">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float clearfix">
 								<img src="imag/auxi/estacionamiento_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Estacionamiento:</strong> Vigilado las 24 horas del día, con capacidad para 50 vehículos. Gratuito para huéspedes.</p></div>
 							</div>
 						</div>
 						<div class="item-servicios border-div clearfix">
-							<div class="col-xs-10 no-float">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 no-float">
 								<img src="imag/auxi/overlanders_icon.png" class="img-responsive" />
 								<div class="vertical"><p><strong>Estacionamiento para overlanders:</strong> Podemos albergar hasta 18 motorhomes en Terral Hotel &amp; Spa, donde caravanas provenientes de diversos lugares del mundo podrán disfrutar de nuestros servicios junto a lo mejor del Valle de Elqui.</p></div>
 							</div>

@@ -11,10 +11,17 @@
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="js/jquery.lettering.js" type="text/javascript"></script>
 	<!--[if IE]>
 	<script src="js/ie9.js"></script>
 	<![endif]-->
+	<script>
+		$(document).ready(function(){
+			$('.price-description').hide();
+			$('#look-price').click(function(){
+				$('.price-description').slideToggle();
+			});
+		});
+	</script>
 </head>
 
 <body class="home">
@@ -30,10 +37,12 @@
 				</div>
 			</div>
 			<div class="top">
-				<img src="imag/int/main_diurnos.png" class="img-responsive" />
-				<div class="title"><h2>Tours y Actividades Diurnos</h2></div>
-				<div class="main-intro">
-					<p>Visita los rincones mágicos del Valle de Elqui, y deléitate con sus deslumbrantes paisajes cordilleranos.</p>
+				<img src="imag/main/main_diurnos_detalle.png" class="img-responsive" />
+				<div class="fixed-position">
+					<div class="subtitle">
+						<h2>Tours Diurnos</h2>
+						<h3>Últimos poblados</h3>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -43,18 +52,33 @@
 		<div id="main" class="clearfix">
 			<div class="cont-servicios">
 				<div class="clearfix">
-					<div class="cont-grid col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="block col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<img src="imag/int/diurnos01.png" class="img-responsive" />
-							<div class="title block-2">
-								<h3><a href="interior_diurnos_detalle.html">Últimos poblados</a></h3>
-							</div>
-							<div class="excerpt">
-								<p class="no-float">Explora los poblados de Horcón y Alcohuaz, donde la artesanía local es realizada con materiales extraídos del Valle de Elqui, y la esencia Diaguita es conservada.</p>
+					<div class="cont-grid-detail col-xs-12">
+						<div class="block col-xs-6">
+							<img src="imag/int/detdiurnos01.png" class="img-responsive" />
+							<div class="item-tour">
+								<h4><a href="ficha_tours.html">Últimos poblados</a></h4>
+								<div class="description">
+									<div class="top-description">
+										<p>Desde Pisco de Elqui comienza el tour en dirección al poblado de Horcón, distintivo por su Pueblito Artesanal que ofrece variados productos naturales y orfebrería en plata y piedras, además de tejidos ...</p>
+									</div>
+									<div class="price-description">
+										<div class="price">
+											Desde <span>CLP 40 000 / USD 54.37</span>
+										</div>
+										<div class="cont-buttons">
+											<a href="ficha_tours.html">Más Info</a>
+											<a href="#">Reservar</a>
+										</div>
+									</div>
+									<div class="cont-hide">
+										<button id="look-price">Ver Precio</button>
+										<button id="hide-price">Esconder Precio</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="block col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<img src="imag/int/diurnos02.png" class="img-responsive" />
+						<div class="block col-xs-6">
+							<img src="imag/int/detdiurnos02.png" class="img-responsive" />
 							<div class="title block-2">
 								<h3><a href="interior_diurnos_detalle.html">Cordillera de Los Andes</a></h3>
 							</div>
@@ -62,8 +86,8 @@
 								<p class="no-float">Contempla la naturaleza andina desde las alturas, e intérnate en las solitarias cumbres, donde la conexión con el magnetismo cordillerano del Valle es inolvidable.</p>
 							</div>
 						</div>
-						<div class="block col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<img src="imag/int/diurnos03.png" class="img-responsive" />
+						<div class="block col-xs-6">
+							<img src="imag/int/detdiurnos03.png" class="img-responsive" />
 							<div class="title block-2">
 								<h3><a href="interior_diurnos_detalle.html">Valle de Cochiguaz</a></h3>
 							</div>
@@ -71,8 +95,8 @@
 								<p class="no-float">Renueva tus energías en este místico poblado, ubicado entre cerros precordilleranos y el maravilloso río Cochiguaz, que invita a sumirse en un encantador viaje espiritual.</p>
 							</div>
 						</div>
-						<div class="block col-lg-6 col-md-6 col-sm-6 col-xs-12">
-							<img src="imag/int/diurnos04.png" class="img-responsive" />
+						<div class="block col-xs-6">
+							<img src="imag/int/detdiurnos04.png" class="img-responsive" />
 							<div class="title block-1">
 								<h3><a href="interior_diurnos_detalle.html">La Serena</a></h3>
 							</div>
