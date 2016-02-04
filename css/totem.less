@@ -36,6 +36,7 @@ a:hover {text-decoration:none;}
 .center {width:100%; text-align:center;}
 .no-float {margin:0 auto; float:none;}
 .no-padding {padding:0 !important;}
+.extra-padding {padding:85px 0 !important;}
 .no-border {border:none !important;}
 .shadow {position:relative; -webkit-box-shadow:0px 2px 5px 0px rgba(50, 50, 50, 0.75); -moz-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75); box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);}
 .upper {text-transform:uppercase;}
@@ -70,8 +71,8 @@ a:hover {text-decoration:none;}
 		}
 		.subtitle {width:auto; margin:0 auto; max-width:60%; min-height:60px; padding:12px 25px !important; text-align:center;}
 		.subtitle {
-			h2 {display:inline-block; padding:5px 0; border-bottom:1px solid @white;}
-			h3 {display:inline-block; padding:5px 0; color:@white; font-size:30px; font-weight:300; text-transform:uppercase; letter-spacing:3px;}
+			h2 {display:inline-block; padding:5px 0; border-bottom:1px solid @white; clear:both;}
+			h3 {display:block; padding:5px 0; color:@white; font-size:30px; font-weight:300; text-transform:uppercase; letter-spacing:3px; clear:both;}
 		}
 	}
 	img {width:100%;}
@@ -125,9 +126,10 @@ a:hover {text-decoration:none;}
 			.right {display:inline-block; width:50%; text-align:right; float:right;}
 		}
 	}
-	.noc {height:390px;}
+	.noc {height:398px;}
 	.noc {
 		.cont-buttons {margin-top:-65px;}
+		img.img-responsive {min-height:250px;}
 	}
 	.description {background:@white;}
 	.price-description {padding:0 20px;}
@@ -142,6 +144,10 @@ a:hover {text-decoration:none;}
 		.look-price {display:block; margin:0 auto; width:40px; height:24px; background:url(../imag/auxi/arrow-top.png) no-repeat center top; text-indent:-999em;}
 		.look-price.current-open {background:url(../imag/auxi/arrow-down.png) no-repeat center top;}
 	}
+}
+.cont-grid-detail.diurnos {
+	.block {position:relative; border:4px solid @grid-grey; background:none; min-height:595px;}
+	.block img.img-responsive {min-height:400px;} 
 }
 
 /*FICHA*/
@@ -162,7 +168,7 @@ a:hover {text-decoration:none;}
 .title-carta {
 	h3 {font-size:26px; font-weight:300; letter-spacing:3px; color:@brown; text-transform:uppercase;}
 }
-.cont-col {padding:30px 0; height:540px; color:@brown; font-size:16px;}
+.cont-col {padding:30px 0; height:600px; color:@brown; font-size:16px;}
 .cont-col {
 	.col-left {padding-right:60px;}
 	.col-right {padding-left:60px;}
@@ -193,16 +199,43 @@ a:hover {text-decoration:none;}
 	img {margin:0 30px 0 0; width:52px; height:52px; float:left; vertical-align:middle;}
 	.vertical {display:table-cell; height:52px; vertical-align:middle;}
 }
-.cover {height:520px; overflow:auto;}
+.cover {height:1100px; overflow:auto;}
 #downClick {display:block; margin:0 auto; width:40px; height:24px; background:url(../imag/auxi/arrow-down.png) no-repeat center top; border:0; text-indent:-999em;}
 .intro-guia {padding:25px 0; background:@grid-grey; text-align:center;}
 .intro-guia {
 	p {margin:0; font-size:24px; color:@text-grey;}
+	p span {color:@brown; font-weight:700;}
 }
 .cont-circle {display:table-cell; margin:0 30px 0 0; width:52px; height:52px; border:1px solid @brown; .rounded-corners (@radius:50%); text-align:center; vertical-align:middle; float:left;}
 .cont-circle {
 	span {font-size:28px; color:@brown; font-weight:700; line-height:170%;}
 }
+
+/*ENCUESTA*/
+.cont-encuesta {height:700px;}
+.intro-evalua {padding:50px 0; text-align:center; background:@back-grey;}
+.intro-evalua {
+	p {font-size:28px; text-transform:uppercase; font-weight:300; letter-spacing:3px; color:@brown;}
+}
+.enc {padding:50px 0; text-align:center;}
+.enc {
+	label {font-size:26px; color:@text-grey; font-weight:700;}
+}
+.ls-nav {display:none;}
+.ls-wrapper {margin:30px auto; width:100% !important; max-width:100% !important;}
+.panel-wrapper {padding:80px 40px !important; background:@white;}
+.panel-wrapper {
+	h2.title {font-size:28px; text-align:center; line-height:150%;}
+	h2.title span {color:@brown; font-weight:700;}
+	label {display:inline-block; cursor:pointer; position:relative; padding-left:35px; margin-right:70px;}
+	input[type=radio], input[type=checkbox] {display:none;}
+	label:before {content:""; display:inline-block; width:27px; height:26px; margin-right:15px; position:absolute; left:0; bottom:6px; background-color:#fff; border:1px solid @brown;}
+	.radio label:before {border-radius:50%;}
+	.checkbox label {margin-bottom:10px;}
+	.checkbox label:before {border-radius:3px;}
+	input[type=radio]:checked + label:before {content:"\2022"; color:@brown; font-size:45px; text-align:center; line-height:18px;}
+}
+.nav-buttons {height:130px; background:@back-grey;}
 
 /*FOOTER*/
 #footer {

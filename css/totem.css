@@ -34,6 +34,9 @@ a:hover {
 .no-padding {
   padding: 0 !important;
 }
+.extra-padding {
+  padding: 85px 0 !important;
+}
 .no-border {
   border: none !important;
 }
@@ -161,15 +164,17 @@ a:hover {
   display: inline-block;
   padding: 5px 0;
   border-bottom: 1px solid #ffffff;
+  clear: both;
 }
 #header .fixed-position .subtitle h3 {
-  display: inline-block;
+  display: block;
   padding: 5px 0;
   color: #ffffff;
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 3px;
+  clear: both;
 }
 #header img {
   width: 100%;
@@ -337,10 +342,13 @@ a:hover {
   float: right;
 }
 .cont-grid-detail .noc {
-  height: 390px;
+  height: 398px;
 }
 .cont-grid-detail .noc .cont-buttons {
   margin-top: -65px;
+}
+.cont-grid-detail .noc img.img-responsive {
+  min-height: 250px;
 }
 .cont-grid-detail .description {
   background: #ffffff;
@@ -385,6 +393,15 @@ a:hover {
 }
 .cont-grid-detail .cont-hide .look-price.current-open {
   background: url(../imag/auxi/arrow-down.png) no-repeat center top;
+}
+.cont-grid-detail.diurnos .block {
+  position: relative;
+  border: 4px solid #d2d2d4;
+  background: none;
+  min-height: 595px;
+}
+.cont-grid-detail.diurnos .block img.img-responsive {
+  min-height: 400px;
 }
 /*FICHA*/
 .tour-title {
@@ -445,7 +462,7 @@ a:hover {
 }
 .cont-col {
   padding: 30px 0;
-  height: 540px;
+  height: 600px;
   color: #8b572a;
   font-size: 16px;
 }
@@ -545,7 +562,7 @@ a:hover {
   vertical-align: middle;
 }
 .cover {
-  height: 520px;
+  height: 1100px;
   overflow: auto;
 }
 #downClick {
@@ -567,6 +584,10 @@ a:hover {
   font-size: 24px;
   color: #444444;
 }
+.intro-guia p span {
+  color: #8b572a;
+  font-weight: 700;
+}
 .cont-circle {
   display: table-cell;
   margin: 0 30px 0 0;
@@ -587,6 +608,95 @@ a:hover {
   color: #8b572a;
   font-weight: 700;
   line-height: 170%;
+}
+/*ENCUESTA*/
+.cont-encuesta {
+  height: 700px;
+}
+.intro-evalua {
+  padding: 50px 0;
+  text-align: center;
+  background: #ebebeb;
+}
+.intro-evalua p {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #8b572a;
+}
+.enc {
+  padding: 50px 0;
+  text-align: center;
+}
+.enc label {
+  font-size: 26px;
+  color: #444444;
+  font-weight: 700;
+}
+.ls-nav {
+  display: none;
+}
+.ls-wrapper {
+  margin: 30px auto;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.panel-wrapper {
+  padding: 80px 40px !important;
+  background: #ffffff;
+}
+.panel-wrapper h2.title {
+  font-size: 28px;
+  text-align: center;
+  line-height: 150%;
+}
+.panel-wrapper h2.title span {
+  color: #8b572a;
+  font-weight: 700;
+}
+.panel-wrapper label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 70px;
+}
+.panel-wrapper input[type=radio],
+.panel-wrapper input[type=checkbox] {
+  display: none;
+}
+.panel-wrapper label:before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 26px;
+  margin-right: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  background-color: #fff;
+  border: 1px solid #8b572a;
+}
+.panel-wrapper .radio label:before {
+  border-radius: 50%;
+}
+.panel-wrapper .checkbox label {
+  margin-bottom: 10px;
+}
+.panel-wrapper .checkbox label:before {
+  border-radius: 3px;
+}
+.panel-wrapper input[type=radio]:checked + label:before {
+  content: "\2022";
+  color: #8b572a;
+  font-size: 45px;
+  text-align: center;
+  line-height: 18px;
+}
+.nav-buttons {
+  height: 130px;
+  background: #ebebeb;
 }
 /*FOOTER*/
 #footer .related {
