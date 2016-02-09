@@ -698,6 +698,12 @@ a:hover {
   height: 130px;
   background: #ebebeb;
 }
+/*CONTACTO*/
+.cont-info {
+  position: relative;
+  padding: 70px 0;
+  text-align: center;
+}
 /*FOOTER*/
 #footer .related {
   position: relative;
